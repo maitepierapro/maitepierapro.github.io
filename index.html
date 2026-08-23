@@ -679,17 +679,14 @@ footer{padding:40px 24px 28px}
           <div class="leadmagnet-point"><span class="leadmagnet-point-num">4</span><span><span class="es-block">El siguiente paso concreto — acción, no reflexión infinita</span><span class="en-block">The concrete next step — action, not endless reflection</span></span></div>
         </div>
 
-        <!-- Replace action with your actual newsletter tool (Kit/ConvertKit, Mailchimp, etc.) -->
-        <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
-          <div class="newsletter-form-inner">
-            <input type="email" class="newsletter-input" placeholder="tu@email.com" required>
-            <button type="submit" class="newsletter-submit"><span class="es">Suscribirme →</span><span class="en">Subscribe →</span></button>
-          </div>
-          <p class="newsletter-disclaimer">
-            <span class="es-block">Newsletter mensual. Sin spam. Puedes darte de baja cuando quieras. Al suscribirte recibirás la guía gratuita.</span>
-            <span class="en-block">Monthly newsletter. No spam. Unsubscribe anytime. On subscribing you'll receive the free guide.</span>
-          </p>
-        </form>
+        <!-- Formulario real conectado a Beehiiv -->
+<div class="newsletter-form">
+  <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="cc2e7b80-33cf-4585-a40a-b4541ad34e0b"></script>
+  <p class="newsletter-disclaimer">
+    <span class="es-block">Newsletter mensual. Sin spam. Puedes darte de baja cuando quieras. Al suscribirte recibirás la guía gratuita.</span>
+    <span class="en-block">Monthly newsletter. No spam. Unsubscribe anytime. On subscribing you'll receive the free guide.</span>
+  </p>
+</div>
       </div>
     </div>
   </div>
