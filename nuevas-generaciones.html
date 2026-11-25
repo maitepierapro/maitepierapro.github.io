@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orientación de carrera para nuevas generaciones de familia empresaria · Maite Piera</title>
+<meta name="description" content="Orientación de carrera para jóvenes y nuevas generaciones de familias empresarias: carrera con sentido, encaje con el futuro de la empresa familiar y preparación para ser accionista responsable.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+--cream:#F7F4EE;--ink:#1C1C1A;--ink-soft:#4A4845;--ink-muted:#8A8780;
+--gold:#B8955A;--gold-light:#E8D9BE;--gold-bg:rgba(184,149,90,0.08);
+--border:rgba(28,28,26,0.12);
+--serif:'Cormorant Garamond',Georgia,serif;
+--sans:'DM Sans',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.en{display:none}
+body.lang-en .es{display:none}
+body.lang-en .en{display:inline}
+.es-block{display:block}.en-block{display:none}
+body.lang-en .es-block{display:none}
+body.lang-en .en-block{display:block}
+/* ─── NAV ─── */
+nav{display:flex;align-items:center;justify-content:space-between;padding:20px 48px;border-bottom:0.5px solid var(--border);background:var(--cream);position:sticky;top:0;z-index:100}
+.logo{font-family:var(--serif);font-size:22px;font-weight:400;letter-spacing:0.02em}
+.logo span{color:var(--gold)}
+.nav-links{display:flex;gap:32px;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-soft)}
+.nav-links a{transition:color 0.2s}
+.nav-links a:hover{color:var(--gold)}
+.nav-right{display:flex;align-items:center;gap:16px}
+.nav-lang{display:flex;gap:6px}
+.lang-btn{padding:4px 10px;border:0.5px solid var(--border);border-radius:20px;font-size:12px;font-weight:500;cursor:pointer;transition:all 0.2s;color:var(--ink-muted);background:transparent;font-family:var(--sans);text-decoration:none;display:inline-block}
+.lang-btn.active,.lang-btn:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.btn-nav{padding:10px 20px;background:var(--ink);color:var(--cream);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;border:none;cursor:pointer;font-family:var(--sans);transition:background 0.2s}
+.btn-nav:hover{background:var(--gold)}
+/* ─── BUTTONS ─── */
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--cream);padding:14px 28px;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border:none;transition:background 0.2s;font-family:var(--sans)}
+.btn-primary:hover{background:var(--gold)}
+.btn-secondary{display:inline-flex;align-items:center;gap:10px;background:transparent;color:var(--ink);padding:14px 28px;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border:0.5px solid var(--ink);transition:all 0.2s;font-family:var(--sans)}
+.btn-secondary:hover{background:var(--ink);color:var(--cream)}
+.btn-gold{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--cream);padding:14px 28px;font-size:13px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;border:none;transition:background 0.2s;font-family:var(--sans)}
+.btn-gold:hover{background:#9a7a45}
+/* ─── HERO ─── */
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:90vh}
+.hero-left{padding:80px 56px 80px 48px;display:flex;flex-direction:column;justify-content:center;border-right:0.5px solid var(--border)}
+.eyebrow{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:28px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';display:inline-block;width:28px;height:0.5px;background:var(--gold)}
+.hero-title{font-family:var(--serif);font-size:58px;font-weight:300;line-height:1.08;margin-bottom:28px}
+.hero-title em{font-style:italic;color:var(--gold)}
+.hero-subtitle{font-size:16px;line-height:1.8;color:var(--ink-soft);max-width:440px;margin-bottom:48px}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+.bilingual-badge{display:inline-flex;align-items:center;gap:8px;background:var(--gold-bg);border:0.5px solid rgba(184,149,90,0.3);padding:7px 14px;font-size:11px;color:var(--gold);letter-spacing:0.06em}
+.hero-right{position:relative;background:#2A2825;overflow:hidden}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center}
+.hero-stats{position:relative;margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(28,28,26,0.08)}
+.stat{background:rgba(28,28,26,0.04);padding:16px 20px}
+.stat-num{font-family:var(--serif);font-size:34px;font-weight:300;color:var(--ink);line-height:1;margin-bottom:4px}
+.stat-label{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted)}
+/* ─── CREDENTIALS BAR ─── */
+.credentials{border-bottom:0.5px solid var(--border);padding:22px 48px;display:flex;align-items:center;gap:36px;flex-wrap:wrap}
+.cred-label{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-muted);white-space:nowrap;flex-shrink:0}
+.cred-items{display:flex;gap:28px;flex-wrap:wrap;align-items:center}
+.cred-item{font-size:12px;letter-spacing:0.04em;color:var(--ink-soft);font-weight:500;white-space:nowrap}
+.cred-sep{color:var(--border);font-size:16px}
+/* ─── SECTIONS ─── */
+section{padding:88px 48px}
+.section-tag{font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:flex;align-items:center;gap:10px}
+.section-tag::before{content:'';display:inline-block;width:20px;height:0.5px;background:var(--gold)}
+.section-title{font-family:var(--serif);font-size:46px;font-weight:300;line-height:1.1;margin-bottom:20px}
+.section-title em{font-style:italic;color:var(--gold)}
+.section-body{font-size:16px;line-height:1.8;color:var(--ink-soft);max-width:600px}
+/* ─── ABOUT ─── */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.about-quote{font-family:var(--serif);font-size:26px;font-weight:300;font-style:italic;line-height:1.5;color:var(--ink);border-left:2px solid var(--gold);padding-left:28px;margin:36px 0}
+.about-credentials{margin-top:36px;display:flex;flex-direction:column;gap:14px}
+.cred-row{display:flex;gap:14px;align-items:flex-start}
+.cred-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;margin-top:8px;flex-shrink:0}
+.about-visual{background:#2A2825;padding:40px}
+.about-visual-title{font-family:var(--serif);font-size:18px;color:rgba(255,255,255,0.5);font-style:italic;margin-bottom:28px}
+.timeline-item{display:flex}
+.tl-left{display:flex;flex-direction:column;align-items:center;width:16px;flex-shrink:0;margin-top:5px}
+.tl-dot{width:7px;height:7px;background:var(--gold);border-radius:50%;flex-shrink:0}
+.tl-line{width:0.5px;background:rgba(184,149,90,0.2);flex:1;min-height:24px}
+.tl-content{padding:0 0 24px 16px}
+.tl-year{font-size:11px;color:var(--gold);font-weight:500;letter-spacing:0.06em;margin-bottom:4px}
+.tl-text{font-size:13px;color:rgba(255,255,255,0.5);line-height:1.65}
+.timeline-item:last-child .tl-line{display:none}
+.timeline-item:last-child .tl-content{padding-bottom:0}
+/* ─── SERVICES (B2C section dark) ─── */
+.services-section{background:var(--ink)}
+.services-section .section-tag{color:var(--gold-light)}
+.services-section .section-tag::before{background:var(--gold-light)}
+.services-section .section-title{color:var(--cream)}
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.06);margin-top:56px}
+.service-card{background:#1C1C1A;padding:36px 28px;transition:background 0.2s}
+.service-card:hover{background:#252420}
+.service-num{font-family:var(--serif);font-size:48px;font-weight:300;color:rgba(184,149,90,0.25);line-height:1;margin-bottom:20px}
+.service-name{font-family:var(--serif);font-size:20px;font-weight:400;color:var(--cream);margin-bottom:14px}
+.service-desc{font-size:13px;line-height:1.75;color:rgba(255,255,255,0.4);margin-bottom:24px}
+.service-link{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold)}
+/* ─── B2C / PARA QUIÉN ─── */
+.para-quien-section{background:var(--cream)}
+.mission-banner{background:var(--gold-bg);border:0.5px solid rgba(184,149,90,0.3);padding:28px 40px;margin-bottom:64px;display:flex;gap:20px;align-items:flex-start}
+.mission-icon{font-size:22px;flex-shrink:0;margin-top:3px}
+.mission-text{font-family:var(--serif);font-size:20px;font-weight:300;font-style:italic;line-height:1.6;color:var(--ink)}
+.mission-text strong{font-style:normal;font-weight:400;color:var(--gold)}
+.profiles-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);margin-top:56px}
+.profile-card{background:var(--cream);padding:40px 36px;position:relative;transition:background 0.25s}
+.profile-card:hover{background:#F0EBE0}
+.profile-card:hover .profile-cta{opacity:1;transform:translateY(0)}
+.profile-num{font-family:var(--serif);font-size:64px;font-weight:300;color:rgba(184,149,90,0.15);line-height:1;position:absolute;top:28px;right:32px}
+.profile-tag{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.profile-headline{font-family:var(--serif);font-size:26px;font-weight:300;line-height:1.25;margin-bottom:18px;color:var(--ink);max-width:380px}
+.profile-headline em{font-style:italic;color:var(--gold)}
+.profile-body{font-size:14px;line-height:1.85;color:var(--ink-soft);margin-bottom:28px;max-width:400px}
+.profile-cta{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);border-bottom:0.5px solid rgba(184,149,90,0.4);padding-bottom:4px;opacity:0.6;transform:translateY(4px);transition:all 0.25s}
+.profile-cta:hover{opacity:1;color:var(--ink)}
+/* ─── PROGRAMAS (How we work together) ─── */
+.programas-section{background:#F2EDE3}
+.programas-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:56px}
+.programa-card{background:white;border:0.5px solid var(--border);padding:44px 40px;position:relative;overflow:hidden}
+.programa-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--gold)}
+.programa-icon{font-size:28px;margin-bottom:24px}
+.programa-label{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.programa-name{font-family:var(--serif);font-size:28px;font-weight:300;line-height:1.2;margin-bottom:6px;color:var(--ink)}
+.programa-name em{font-style:italic;color:var(--gold)}
+.programa-tagline{font-size:13px;color:var(--ink-muted);margin-bottom:28px;font-style:italic}
+.programa-details{display:flex;flex-direction:column;gap:10px;margin-bottom:32px;padding:20px;background:var(--gold-bg);border:0.5px solid rgba(184,149,90,0.2)}
+.programa-detail{display:flex;gap:12px;align-items:flex-start;font-size:13px;color:var(--ink-soft)}
+.programa-detail-icon{color:var(--gold);flex-shrink:0;font-size:12px;margin-top:1px}
+.programa-desc{font-size:14px;line-height:1.85;color:var(--ink-soft);margin-bottom:32px}
+.programa-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(184,149,90,0.15);border:0.5px solid rgba(184,149,90,0.4);padding:6px 14px;font-size:11px;color:var(--gold);letter-spacing:0.06em;margin-bottom:28px}
+.programa-badge-dot{width:6px;height:6px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+/* ─── METHOD ─── */
+.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:56px}
+.method-step{padding:28px 0;border-bottom:0.5px solid var(--border);display:flex;gap:24px}
+.method-step:first-child{border-top:0.5px solid var(--border)}
+.step-num{font-family:var(--serif);font-size:13px;color:var(--gold);min-width:28px;margin-top:5px}
+.step-content h3{font-family:var(--serif);font-size:22px;font-weight:400;margin-bottom:8px}
+.step-content p{font-size:14px;color:var(--ink-soft);line-height:1.75}
+.method-box{border:0.5px solid var(--border);padding:40px;position:sticky;top:120px}
+.method-box-label{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:20px}
+.outcome-row{display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
+.outcome-arrow{color:var(--gold);font-size:14px;margin-top:2px;flex-shrink:0}
+.outcome-text{font-size:14px;color:var(--ink-soft);line-height:1.7}
+.method-divider{border:none;border-top:0.5px solid var(--border);margin:28px 0}
+.method-price{font-family:var(--serif);font-size:34px;font-weight:300;margin-bottom:20px}
+/* ─── TESTIMONIALS ─── */
+.testimonials-section{background:#F2EDE3}
+.testi-header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;margin-bottom:56px}
+.testi-cta-link{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold);border:0.5px solid rgba(184,149,90,0.4);padding:10px 18px;transition:all 0.2s}
+.testi-cta-link:hover{background:var(--gold);color:white;border-color:var(--gold)}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testi-card{background:white;padding:36px;border:0.5px solid var(--border)}
+.testi-stars{color:var(--gold);font-size:13px;letter-spacing:3px;margin-bottom:20px}
+.testi-quote{font-family:var(--serif);font-size:18px;font-weight:300;font-style:italic;line-height:1.65;color:var(--ink);margin-bottom:28px}
+.testi-name{font-size:13px;font-weight:500;color:var(--ink)}
+.testi-role{font-size:12px;color:var(--ink-muted);margin-top:3px}
+/* ─── NEWSLETTER ─── */
+.newsletter-section{background:var(--ink);padding:80px 48px}
+.newsletter-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.newsletter-section .section-tag{color:var(--gold-light)}
+.newsletter-section .section-tag::before{background:var(--gold-light)}
+.newsletter-section .section-title{color:var(--cream);font-size:38px}
+.newsletter-section .section-body{color:rgba(255,255,255,0.5);font-size:15px;margin-bottom:0}
+.newsletter-leadmagnet{background:rgba(255,255,255,0.05);border:0.5px solid rgba(255,255,255,0.1);padding:32px}
+.leadmagnet-label{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.leadmagnet-title{font-family:var(--serif);font-size:22px;font-weight:300;color:var(--cream);line-height:1.35;margin-bottom:20px}
+.leadmagnet-points{display:flex;flex-direction:column;gap:10px;margin-bottom:24px}
+.leadmagnet-point{display:flex;gap:12px;align-items:flex-start;font-size:13px;color:rgba(255,255,255,0.55)}
+.leadmagnet-point-num{font-family:var(--serif);font-size:16px;color:var(--gold);min-width:20px;flex-shrink:0;line-height:1.4}
+.newsletter-form{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.newsletter-form-inner{display:flex;gap:0}
+.newsletter-input{flex:1;padding:14px 18px;background:rgba(255,255,255,0.07);border:0.5px solid rgba(255,255,255,0.15);color:white;font-family:var(--sans);font-size:14px;outline:none;transition:border-color 0.2s}
+.newsletter-input::placeholder{color:rgba(255,255,255,0.3)}
+.newsletter-input:focus{border-color:var(--gold)}
+.newsletter-submit{padding:14px 22px;background:var(--gold);color:white;border:none;font-family:var(--sans);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:background 0.2s;white-space:nowrap}
+.newsletter-submit:hover{background:#9a7a45}
+.newsletter-disclaimer{font-size:11px;color:rgba(255,255,255,0.3);line-height:1.6}
+/* ─── BOOKS ─── */
+.books-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:56px}
+.book-card{display:flex;gap:28px;border:0.5px solid var(--border);padding:32px}
+.book-cover{width:80px;min-width:80px;height:112px;display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:10px;text-align:center;line-height:1.5;padding:0;overflow:hidden}
+.book-cover-1{background:#2A2825}.book-cover-2{background:#1C3A2A}
+.book-cover img{width:100%;height:100%;object-fit:cover}
+.book-title{font-family:var(--serif);font-size:20px;font-weight:400;margin-bottom:10px}
+.book-desc{font-size:13px;color:var(--ink-soft);line-height:1.75;margin-bottom:16px}
+.book-link{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold)}
+/* ─── CTA ─── */
+.cta-section{background:var(--ink);padding:100px 48px;display:flex;align-items:center;justify-content:space-between;gap:60px}
+.cta-section .section-tag{color:var(--gold-light)}
+.cta-section .section-tag::before{background:var(--gold-light)}
+.cta-section .section-title{color:var(--cream)}
+.cta-section .section-body{color:rgba(255,255,255,0.45)}
+.cta-actions{display:flex;flex-direction:column;gap:12px;min-width:300px}
+.cta-item{display:flex;align-items:center;gap:16px;padding:20px 24px;border:0.5px solid rgba(255,255,255,0.1);cursor:pointer;transition:border-color 0.2s}
+.cta-item:hover{border-color:var(--gold)}
+.cta-item-icon{font-size:16px}
+.cta-item-text{font-size:14px;color:rgba(255,255,255,0.65);flex:1}
+.cta-arrow{color:rgba(255,255,255,0.25);font-size:14px}
+/* ─── FOOTER ─── */
+footer{padding:56px 48px 36px;border-top:0.5px solid var(--border)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.footer-logo{font-family:var(--serif);font-size:24px;font-weight:400;margin-bottom:12px}
+.footer-logo span{color:var(--gold)}
+.footer-tagline{font-size:13px;color:var(--ink-muted);line-height:1.75;max-width:280px}
+.footer-col-title{font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-muted);margin-bottom:18px}
+.footer-links{display:flex;flex-direction:column;gap:11px}
+.footer-links a{font-size:14px;color:var(--ink-soft);transition:color 0.2s}
+.footer-links a:hover{color:var(--gold)}
+.footer-bottom{padding-top:28px;border-top:0.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--ink-muted)}
+.footer-bottom-links{display:flex;gap:24px}
+.footer-bottom a{color:var(--ink-muted)}
+/* ─── RESPONSIVE ─── */
+@media(max-width:900px){
+nav{padding:16px 24px}.nav-links{display:none}
+.hero{grid-template-columns:1fr;min-height:auto}
+.hero-left{padding:60px 24px}.hero-title{font-size:40px}
+.hero-right{min-height:420px}
+.credentials{padding:20px 24px}
+section{padding:60px 24px}
+.about-grid,.method-grid,.books-grid{grid-template-columns:1fr;gap:40px}
+.services-grid{grid-template-columns:1fr 1fr}
+.profiles-grid{grid-template-columns:1fr}
+.programas-grid{grid-template-columns:1fr}
+.testi-grid{grid-template-columns:1fr}
+.newsletter-inner{grid-template-columns:1fr;gap:40px}
+.cta-section{flex-direction:column;padding:60px 24px}
+.footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+footer{padding:40px 24px 28px}
+.footer-bottom{flex-direction:column;gap:12px;text-align:center}
+.testi-header{flex-direction:column;align-items:flex-start}
+}
+@media(max-width:600px){
+.hero-title{font-size:34px}.section-title{font-size:32px}
+.services-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}
+.newsletter-form-inner{flex-direction:column}
+.newsletter-submit{width:100%}
+.mission-banner{padding:20px 24px}
+}
+
+/* ─── NUEVAS GENERACIONES ─── */
+.ng-hero{padding:110px 48px 90px;max-width:900px}
+.ng-hero .hero-title{font-size:56px}
+.ng-lead{font-size:17px;line-height:1.8;color:var(--ink-soft);max-width:620px;margin-bottom:44px}
+.ng-section{padding:88px 48px}
+.ng-list{display:flex;flex-direction:column;gap:18px;margin-top:36px;max-width:760px}
+.ng-item{display:flex;gap:16px;align-items:flex-start;padding-bottom:18px;border-bottom:0.5px solid var(--border)}
+.ng-item p{font-size:16px;line-height:1.7;color:var(--ink-soft)}
+.ng-arrow{color:var(--gold);font-size:16px;line-height:1.7}
+.ng-note{margin-top:40px;font-family:var(--serif);font-style:italic;font-size:22px;color:var(--gold-light);max-width:700px}
+.ng-confidential{margin-top:48px;max-width:760px;background:var(--gold-bg);border-left:2px solid var(--gold);padding:24px 28px}
+.ng-conf-title{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.ng-confidential p{font-size:15px;line-height:1.7;color:var(--ink-soft)}
+.ng-band{padding:72px 48px;display:flex;align-items:center;justify-content:space-between;gap:48px;border-bottom:0.5px solid var(--border)}
+.ng-band .section-body{max-width:620px}
+@media(max-width:900px){.ng-hero,.ng-section{padding:60px 24px}.ng-hero .hero-title{font-size:38px}.ng-band{flex-direction:column;align-items:flex-start;padding:56px 24px}}
+.ng-creds{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);margin:44px 0 40px;border:0.5px solid var(--border)}
+.ng-cred{background:var(--cream);padding:28px 24px}
+.ng-cred-num{font-family:var(--serif);font-size:36px;font-weight:300;color:var(--gold);line-height:1;margin-bottom:14px}
+.ng-cred p{font-size:14px;line-height:1.65;color:var(--ink-soft)}
+.ng-books{margin-top:48px;max-width:760px}
+.ng-book{display:flex;flex-direction:column;gap:4px;padding:16px 0;border-bottom:0.5px solid var(--border)}
+.ng-book em{font-family:var(--serif);font-size:22px;font-style:italic;color:var(--ink)}
+.ng-book span{font-size:14px;color:var(--ink-muted)}
+@media(max-width:900px){.ng-creds{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.ng-creds{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<!-- NAV -->
+<nav>
+  <a href="/" class="logo">Maite Piera<span>.</span></a>
+  <div class="nav-links">
+    <a href="/">Inicio</a>
+    <a href="#para-quien">Para quién</a>
+    <a href="#objetivos">Objetivos</a>
+    <a href="#trayectoria">Trayectoria</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+  <div class="nav-right">
+    <a href="#contacto"><button class="btn-nav">Contacto →</button></a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="ng-hero">
+  <div class="eyebrow">Nuevas generaciones · Familia empresaria</div>
+  <h1 class="hero-title">Las primeras decisiones de carrera también son <em>transiciones</em> valientes</h1>
+  <p class="ng-lead">Acompaño a jóvenes de familias empresarias a decidir qué estudiar, dónde empezar y si incorporarse a la empresa familiar, y cuándo. Con criterio, con datos y con una conversación honesta.</p>
+  <div class="hero-btns">
+    <a href="#contacto"><button class="btn-primary">Hablemos →</button></a>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section id="para-quien" class="ng-section">
+  <div class="section-tag">Para quién</div>
+  <h2 class="section-title">Una decisión que marca a la persona <em>y a la empresa</em></h2>
+  <div class="ng-list">
+    <div class="ng-item"><span class="ng-arrow">→</span><p>Jóvenes que tienen que elegir estudios, universidad o primer trabajo.</p></div>
+    <div class="ng-item"><span class="ng-arrow">→</span><p>La siguiente generación que duda si entrar en la empresa familiar, en qué rol y cuándo.</p></div>
+    <div class="ng-item"><span class="ng-arrow">→</span><p>Familias que quieren preparar esa conversación sin presión y sin dar nada por supuesto.</p></div>
+  </div>
+</section>
+
+<!-- OBJETIVOS -->
+<section id="objetivos" class="services-section ng-section">
+  <div class="section-tag">Objetivos</div>
+  <h2 class="section-title">Qué trabajamos <em>juntos</em></h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-name">Diseñar una carrera con sentido</div>
+      <div class="service-desc">Descubrir talento, intereses y valores para construir un camino profesional propio, que tenga sentido para ti y no solo para los demás.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-name">Hacer confluir tu carrera con el futuro de la empresa</div>
+      <div class="service-desc">Cómo encaja tu decisión con el proyecto de la familia: incorporarte ahora, más adelante o aportar desde fuera.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-name">Explorar roles según el plan estratégico</div>
+      <div class="service-desc">Qué funciones puede necesitar la empresa en los próximos años, cuáles encajan contigo y qué preparación requieren.</div>
+    </div>
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <div class="service-name">Prepararte para ser accionista responsable</div>
+      <div class="service-desc">Reflexionar sobre el camino para ejercer un día la propiedad con criterio y compromiso, trabajes o no en la empresa.</div>
+    </div>
+  </div>
+  <p class="ng-note">Cada proceso es a medida: lo diseñamos juntos según la edad, el momento y lo que la familia necesita.</p>
+</section>
+
+<!-- TRAYECTORIA -->
+<section id="trayectoria" class="ng-section">
+  <div class="section-tag">Trayectoria</div>
+  <h2 class="section-title">Experiencia para acompañar <em>decisiones importantes</em></h2>
+  <div class="ng-creds">
+    <div class="ng-cred"><div class="ng-cred-num">15+</div><p>Años como executive coach, en los equipos de coaching ejecutivo de IESE y Harvard Business School Executive Education</p></div>
+    <div class="ng-cred"><div class="ng-cred-num">HBR</div><p>Miembro del Harvard Business Review Advisory Board</p></div>
+    <div class="ng-cred"><div class="ng-cred-num">Harvard</div><p>Formación en Family Business por Harvard</p></div>
+    <div class="ng-cred"><div class="ng-cred-num">20+</div><p>Años decidiendo carreras desde dentro de las organizaciones: GBFoods, Freixenet, Deloitte</p></div>
+  </div>
+  <div class="ng-list">
+    <div class="ng-item"><span class="ng-arrow">→</span><p>He acompañado a varias generaciones de familias empresarias de referencia.</p></div>
+    <div class="ng-item"><span class="ng-arrow">→</span><p>Trabajo cada día con jóvenes: profesora en Blanquerna (Universitat Ramon Llull) y asesora de carrera en el Master in Management de IESE.</p></div>
+  </div>
+  <div class="ng-books">
+    <div class="ng-conf-title">Libros</div>
+    <a class="ng-book" href="https://www.amazon.es/Reinventa-carrera-100-d%C3%ADas-profesionalmente-ebook/dp/B0742ML53Y" target="_blank"><em>Reinventa tu carrera en 100 días →</em><span>Una guía práctica para cambiar de rumbo sin perder lo que has construido.</span></a>
+    <a class="ng-book" href="https://www.amazon.es/Buscar-trabajo-Dummies-Maite-Piera/dp/8432921440" target="_blank"><em>Buscar trabajo para Dummies →</em><span>La referencia en español sobre búsqueda de empleo y marca personal.</span></a>
+  </div>
+  <div class="ng-confidential">
+    <div class="ng-conf-title">Confidencialidad</div>
+    <p>Cada proceso es confidencial, también dentro de la familia: lo que el joven comparte en las sesiones es suyo.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<div id="contacto" class="cta-section">
+  <div>
+    <div class="section-tag">Empieza hoy</div>
+    <h2 class="section-title">Hablemos de <em>su próximo paso</em></h2>
+    <p class="section-body">Escríbeme y buscamos un momento para conversar con la familia, entender el momento y ver cómo puedo ayudar.</p>
+  </div>
+  <div class="cta-actions">
+    <a href="mailto:hola@maitepiera.com">
+      <div class="cta-item"><span class="cta-item-icon">✉️</span><span class="cta-item-text">hola@maitepiera.com</span><span class="cta-arrow">→</span></div>
+    </a>
+    <a href="https://www.linkedin.com/in/maitepiera" target="_blank">
+      <div class="cta-item"><span class="cta-item-icon">in</span><span class="cta-item-text">LinkedIn</span><span class="cta-arrow">→</span></div>
+    </a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-bottom">
+    <span>© 2026 Maite Piera · Todos los derechos reservados</span>
+    <div class="footer-bottom-links"><a href="/">maitepiera.com</a></div>
+  </div>
+</footer>
+</body>
+</html>

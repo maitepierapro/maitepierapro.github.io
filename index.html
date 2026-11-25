@@ -246,6 +246,10 @@ footer{padding:40px 24px 28px}
 .newsletter-submit{width:100%}
 .mission-banner{padding:20px 24px}
 }
+
+.ng-band{padding:72px 48px;display:flex;align-items:center;justify-content:space-between;gap:48px;border-bottom:0.5px solid var(--border)}
+.ng-band .section-body{max-width:620px}
+@media(max-width:900px){.ng-band{flex-direction:column;align-items:flex-start;padding:56px 24px}}
 </style>
 </head>
 <body>
@@ -466,8 +470,8 @@ footer{padding:40px 24px 28px}
       <p class="programa-tagline"><span class="es-block">Un proceso estructurado en grupo con soporte individual incluido</span><span class="en-block">A structured group process with individual support included</span></p>
       <div class="programa-badge">
         <span class="programa-badge-dot"></span>
-        <span class="es">Próximo inicio: Junio 2026</span>
-        <span class="en">Next start: June 2026</span>
+        <span class="es">Próximo inicio: Enero 2027</span>
+        <span class="en">Next start: January 2027</span>
       </div>
       <div class="programa-details">
         <div class="programa-detail"><span class="programa-detail-icon">◆</span><span><span class="es">4 sesiones grupales de 1,5h</span><span class="en">4 group sessions of 1.5h</span></span></div>
@@ -478,7 +482,7 @@ footer{padding:40px 24px 28px}
         <span class="es-block">Un programa completo para profesionales que quieren reinventarse con estructura y apoyo. Combina el aprendizaje y la energía del grupo con el acompañamiento personalizado que necesitas para avanzar en tu situación concreta.</span>
         <span class="en-block">A complete programme for professionals who want to reinvent themselves with structure and support. It combines the learning and energy of the group with the personalised accompaniment you need to move forward in your specific situation.</span>
       </p>
-      <a href="/reinventa" target="_blank"><button class="btn-gold"><span class="es">Quiero apuntarme →</span><span class="en">I want to join →</span></button></a>
+      <a href="#contacto"><button class="btn-gold"><span class="es">Quiero apuntarme →</span><span class="en">I want to join →</span></button></a>
     </div>
   </div>
 </section>
@@ -515,6 +519,21 @@ footer{padding:40px 24px 28px}
       <a href="https://calendar.app.google/QqPWJQTYN7CTGyHs8" target="_blank" class="service-link"><span class="es">Más información →</span><span class="en">Learn more →</span></a>
     </div>
   </div>
+</section>
+<!-- NUEVAS GENERACIONES -->
+<section id="nuevas-generaciones" class="ng-band">
+  <div>
+    <div class="section-tag"><span class="es">Nuevas generaciones</span><span class="en">Next generation</span></div>
+    <h2 class="section-title">
+      <span class="es-block">Orientación de carrera para <em>familias empresarias</em></span>
+      <span class="en-block">Career guidance for <em>business families</em></span>
+    </h2>
+    <p class="section-body">
+      <span class="es-block">Acompaño a jóvenes de familias empresarias a diseñar una carrera con sentido y a decidir cómo encaja con el futuro de la empresa familiar.</span>
+      <span class="en-block">I help young members of business families design a meaningful career and decide how it fits with the future of the family business.</span>
+    </p>
+  </div>
+  <a href="/nuevas-generaciones"><button class="btn-primary"><span class="es">Saber más →</span><span class="en">Learn more →</span></button></a>
 </section>
 <!-- METHOD -->
 <section id="metodo">
@@ -604,47 +623,6 @@ footer{padding:40px 24px 28px}
 
   <div style="margin-top:56px;max-width:640px;margin-left:auto;margin-right:auto;background:white;border:0.5px solid var(--border);padding:44px;"><div class="section-tag" style="margin-bottom:12px;"><span class="es">Cuéntame tu experiencia</span><span class="en">Share your experience</span></div><h3 style="font-family:var(--serif);font-size:26px;font-weight:300;margin-bottom:8px;"><span class="es-block">Déjame <em>tu reseña</em></span><span class="en-block">Leave <em>your review</em></span></h3><p style="font-size:14px;color:var(--ink-soft);margin-bottom:28px;"><span class="es-block">Cuéntame en una frase qué tal ha sido trabajar juntos. Leo cada reseña personalmente.</span><span class="en-block">Tell me in a sentence what it's been like working together. I read every review personally.</span></p><div id="review-stars" style="font-size:28px;letter-spacing:6px;margin-bottom:24px;"></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;"><div><label style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);display:block;margin-bottom:6px;"><span class="es">Tu nombre</span><span class="en">Your name</span></label><input type="text" id="review-name" placeholder="Nombre y apellido" style="width:100%;padding:12px 14px;border:0.5px solid var(--border);font-family:var(--sans);font-size:14px;outline:none;box-sizing:border-box;"></div><div><label style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);display:block;margin-bottom:6px;"><span class="es">Empresa o cargo (opcional)</span><span class="en">Company or role (optional)</span></label><input type="text" id="review-role" placeholder="p. ej. Directora de Marketing, Acme" style="width:100%;padding:12px 14px;border:0.5px solid var(--border);font-family:var(--sans);font-size:14px;outline:none;box-sizing:border-box;"></div></div><label style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-muted);display:block;margin-bottom:6px;"><span class="es">¿Qué te ha gustado de trabajar conmigo?</span><span class="en">What did you enjoy about working with me?</span></label><textarea id="review-text" placeholder="Escribe tu reseña aquí..." rows="4" style="width:100%;padding:12px 14px;border:0.5px solid var(--border);font-family:var(--sans);font-size:14px;outline:none;margin-bottom:24px;resize:vertical;box-sizing:border-box;"></textarea><button type="button" onclick="window.sendMaiteReview()" class="btn-primary" style="border:none;"><span class="es">Enviar reseña por email →</span><span class="en">Send review by email →</span></button></div>
 </section>
-<!-- ═══════════════════════════════════════════════
-     NEW: NEWSLETTER + LEAD MAGNET
-═══════════════════════════════════════════════ -->
-<section class="newsletter-section" id="newsletter">
-  <div class="newsletter-inner">
-    <div>
-      <div class="section-tag"><span class="es">Newsletter mensual</span><span class="en">Monthly newsletter</span></div>
-      <h2 class="section-title">
-        <span class="es-block">Una reflexión al mes para profesionales que <em>quieren más</em></span>
-        <span class="en-block">One reflection a month for professionals who <em>want more</em></span>
-      </h2>
-      <p class="section-body">
-        <span class="es-block">Sin ruido. Sin ventas. Solo ideas concretas sobre transiciones, propósito profesional y cómo construir la siguiente etapa de tu carrera con criterio.</span>
-        <span class="en-block">No noise. No sales. Just concrete ideas about transitions, professional purpose, and how to build the next stage of your career with intention.</span>
-      </p>
-    </div>
-    <div>
-      <div class="newsletter-leadmagnet">
-        <div class="leadmagnet-label"><span class="es">Descarga gratuita al suscribirte</span><span class="en">Free download when you subscribe</span></div>
-        <div class="leadmagnet-title">
-          <span class="es-block">Reinventa tu carrera en 4 claves:<br><em>Lo que nadie te enseñó en la empresa</em></span>
-          <span class="en-block">Reinvent your career in 4 keys:<br><em>What nobody taught you in corporate</em></span>
-        </div>
-        <div class="leadmagnet-points">
-          <div class="leadmagnet-point"><span class="leadmagnet-point-num">1</span><span><span class="es-block">Diagnóstico real — saber de dónde partes</span><span class="en-block">Real diagnosis — knowing where you start from</span></span></div>
-          <div class="leadmagnet-point"><span class="leadmagnet-point-num">2</span><span><span class="es-block">Tu momento y contexto — un plan que se ajusta a tu vida real</span><span class="en-block">Your moment &amp; context — a plan that fits your real life</span></span></div>
-          <div class="leadmagnet-point"><span class="leadmagnet-point-num">3</span><span><span class="es-block">Tu propuesta de valor — quién eres fuera de tu cargo</span><span class="en-block">Your value proposition — who you are beyond your title</span></span></div>
-          <div class="leadmagnet-point"><span class="leadmagnet-point-num">4</span><span><span class="es-block">El siguiente paso concreto — acción, no reflexión infinita</span><span class="en-block">The concrete next step — action, not endless reflection</span></span></div>
-        </div>
-        <!-- Formulario real conectado a Beehiiv -->
-<div class="newsletter-form">
-  <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="cc2e7b80-33cf-4585-a40a-b4541ad34e0b"></script>
-  <p class="newsletter-disclaimer">
-    <span class="es-block">Newsletter mensual. Sin spam. Puedes darte de baja cuando quieras. Al suscribirte recibirás la guía gratuita.</span>
-    <span class="en-block">Monthly newsletter. No spam. Unsubscribe anytime. On subscribing you'll receive the free guide.</span>
-  </p>
-</div>
-      </div>
-    </div>
-  </div>
-</section>
 <!-- BOOKS -->
 <section id="libros">
   <div class="section-tag"><span class="es">Libros</span><span class="en">Books</span></div>
@@ -660,7 +638,7 @@ footer{padding:40px 24px 28px}
       <div>
         <div class="book-title">Reinventa tu carrera en 100 días</div>
         <p class="book-desc">Una guía práctica para profesionales que quieren cambiar de rumbo sin perder lo que han construido. Con método paso a paso y ejercicios reales.</p>
-        <a href="#" class="book-link">VER EN AMAZON →</a>
+        <a href="https://www.amazon.es/Reinventa-carrera-100-d%C3%ADas-profesionalmente-ebook/dp/B0742ML53Y" target="_blank" class="book-link">VER EN AMAZON →</a>
       </div>
     </div>
     <div class="book-card">
@@ -670,7 +648,7 @@ footer{padding:40px 24px 28px}
       <div>
         <div class="book-title">Buscar Trabajo para Dummies</div>
         <p class="book-desc">La referencia en español sobre búsqueda de empleo: LinkedIn, entrevistas, marca personal y negociación salarial explicados con claridad.</p>
-        <a href="#" class="book-link">VER EN AMAZON →</a>
+        <a href="https://www.amazon.es/Buscar-trabajo-Dummies-Maite-Piera/dp/8432921440" target="_blank" class="book-link">VER EN AMAZON →</a>
       </div>
     </div>
   </div>
@@ -732,6 +710,7 @@ footer{padding:40px 24px 28px}
         <a href="#para-quien"><span class="es">Para quién</span><span class="en">Who it's for</span></a>
         <a href="#servicios"><span class="es">Programas</span><span class="en">Programmes</span></a>
         <a href="#metodo"><span class="es">Método</span><span class="en">Method</span></a>
+        <a href="/nuevas-generaciones"><span class="es">Nuevas generaciones</span><span class="en">Next generation</span></a>
         <a href="#libros"><span class="es">Libros</span><span class="en">Books</span></a>
       </div>
     </div>
@@ -742,7 +721,6 @@ footer{padding:40px 24px 28px}
         <a href="mailto:hola@maitepiera.com">Email</a>
         <a href="https://www.linkedin.com/in/maitepiera" target="_blank">LinkedIn</a>
         <a href="https://www.instagram.com/maitepiera.coach" target="_blank">Instagram</a>
-        <a href="#newsletter"><span class="es">Newsletter</span><span class="en">Newsletter</span></a>
       </div>
     </div>
     <div>
